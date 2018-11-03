@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3f68cfcb-5792-4a1e-a3a1-d4aa50298607</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>linear-regression.py</StartupFile>
+    <StartupFile>data-loader.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>D:\Projetos\udacity-pytorch\udacity-pytorch</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="data-loader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="linear-regression.py" />
     <Compile Include="logistic-regression.py">
       <SubType>Code</SubType>

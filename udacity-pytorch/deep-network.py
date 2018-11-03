@@ -70,8 +70,8 @@ for epoch in range(500):
 
     # Compute and print loss
     loss = criterion(y_pred, y_data)
-    model_loss.append(loss.data[0])
-    print(epoch, loss.data[0])
+    model_loss.append(loss.item())
+    print(epoch, loss.item())
 
     # Zero gradients, perfom a backward pass, and update the weights.
     optimizer.zero_grad()
