@@ -7,10 +7,11 @@ from sklearn.metrics import confusion_matrix,accuracy_score
 # setting working directory
 import os
 os.chdir("D:\\Projetos\\udacity-pytorch\\udacity-pytorch")
-
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 xy = np.loadtxt('data/diabetes.csv',delimiter = ',', dtype = np.float32)
-x_data = Variable(torch.from_numpy(xy[:,0:-1]))
-y_data = Variable(torch.from_numpy(xy[:,[-1]]))
+x_data = Variable(torch.from_numpy(xy[:,0:-1])).float().to(device)
+y_data = Variable(torch.from_numpy(xy[:,[-1]])).float().to(device)
+
 
 # Number of features and outputs
 print(x_data.shape)
@@ -27,11 +28,11 @@ class Model(torch.nn.Module):
         # torch.nn.Linear
         # Sigmoid Layers
         # torch.nn.Sigmoid
-        self.l1 = torch.nn.Linear(8, 6) # Eight in and six out
-        self.l2 = torch.nn.Linear(6, 4) # Six in and four out
-        self.l3 = torch.nn.Linear(4, 1) # Four in and one out
+        self.l1 = torch.nn.Linear(8, 6).to(device) # Eight in and six out
+        self.l2 = torch.nn.Linear(6, 4).to(device) # Six in and four out
+        self.l3 = torch.nn.Linear(4, 1).to(device) # Four in and one out
 
-        self.sigmoid = torch.nn.Sigmoid()
+        self.sigmoid = torch.nn.Sigmoid().to(device)
 
     def forward(self, x):
         """
@@ -46,7 +47,7 @@ class Model(torch.nn.Module):
         return y_pred
 
 # our model
-model = Model()
+model = Model().to(device)
 
 # Construct our loss function and an Optimizer. The call to model.parameters()
 # in the SGD constructor will contain the learnable parameters of the two
@@ -54,7 +55,7 @@ model = Model()
 
 # Using Binary Cross Entropy
 #criterion = torch.nn.BCELoss(size_average=False) deprecated
-criterion = torch.nn.BCELoss(reduction = 'sum')
+criterion = torch.nn.BCELoss(reduction = 'sum').to(device)
 
 # Using Stochastic Gradient Descent
 # with learning ratio 0.01
@@ -88,7 +89,7 @@ plt.show()
 y_pred = model.forward(x_data)
 
 # confusion matrix
-confusion_matrix(y_data.numpy(),y_pred.detach().numpy()>0.5)
+confusion_matrix(y_data.cpu().numpy(),y_pred.cpu().detach().numpy()>0.5)
 
 # accuracy
-accuracy_score(y_data.numpy(),y_pred.detach().numpy()>0.5)
+accuracy_score(y_data.cpu().numpy(),y_pred.cpu().detach().numpy()>0.5)
