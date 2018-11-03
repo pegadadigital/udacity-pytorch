@@ -9,6 +9,7 @@ from sklearn.metrics import confusion_matrix,accuracy_score
 import os
 os.chdir("D:\\Projetos\\udacity-pytorch\\udacity-pytorch")
 
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 class DiabetesDataset(Dataset):
     """ Diabetes dataset."""
