@@ -7,10 +7,11 @@
     <StartupFile>linear-regression.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>D:\Projetos\udacity-pytorch\udacity-pytorch</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>udacity-pytorch</Name>
     <RootNamespace>udacity-pytorch</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,9 @@
   <ItemGroup>
     <Compile Include="linear-regression.py" />
     <Compile Include="logistic-regression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="deep-network.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
