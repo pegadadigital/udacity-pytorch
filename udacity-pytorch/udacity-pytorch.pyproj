@@ -35,6 +35,9 @@
     <Compile Include="deep-network.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="toy_inception_mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="softmax-mnist.py">
       <SubType>Code</SubType>
     </Compile>
