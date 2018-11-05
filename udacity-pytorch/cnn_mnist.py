@@ -107,7 +107,6 @@ for epoch in range(1, 10):
 plt.plot(range(1,len(model_loss)+1), model_loss)
 plt.title('loss function')
 plt.xlabel('iterations')
-
 plt.ylabel('loss function')
 plt.show()
 

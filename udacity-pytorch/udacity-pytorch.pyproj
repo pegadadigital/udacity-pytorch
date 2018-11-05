@@ -28,6 +28,15 @@
     <Compile Include="data-loader.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="hello-rnn-emb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hello-rnn-seq.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hello-rnn.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="linear-regression.py" />
     <Compile Include="logistic-regression.py">
       <SubType>Code</SubType>
