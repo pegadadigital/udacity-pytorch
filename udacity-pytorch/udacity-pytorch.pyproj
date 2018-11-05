@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="cnn_mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="data-loader.py">
       <SubType>Code</SubType>
     </Compile>
