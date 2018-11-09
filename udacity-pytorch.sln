@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "udacity-pytorch", "udacity-
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "perceptron", "perceptron\perceptron.pyproj", "{A9D6DE6F-F24E-46F4-B430-BEB4EEA93E38}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "crossentropy", "crossentropy\crossentropy.pyproj", "{589AC4B3-599A-43BF-B6C5-4656D0619511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,8 @@ Global
 		{3F68CFCB-5792-4A1E-A3A1-D4AA50298607}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9D6DE6F-F24E-46F4-B430-BEB4EEA93E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9D6DE6F-F24E-46F4-B430-BEB4EEA93E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589AC4B3-599A-43BF-B6C5-4656D0619511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589AC4B3-599A-43BF-B6C5-4656D0619511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
