@@ -76,7 +76,7 @@ for epoch in range(100):
         hidden, output = model(hidden, input)
         val, idx = output.max(1)
         sys.stdout.write(idx2char[idx.data[0]])
-        label = label.unsqueeze_(dim=0)
+        label = label.unsqueeze(dim=0)
         loss += criterion(output, label)
 
     loss.backward()
