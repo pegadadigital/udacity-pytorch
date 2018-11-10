@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "crossentropy", "crossentrop
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "gradient-descent", "gradient-descent\gradient-descent.pyproj", "{57592CEE-FDEA-44BA-9DFA-056A8C2F5427}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "student-admissions", "student-admissions\student-admissions.pyproj", "{6E2ECB9F-92C5-4584-AEEA-CDF70D00BC8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,8 @@ Global
 		{589AC4B3-599A-43BF-B6C5-4656D0619511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57592CEE-FDEA-44BA-9DFA-056A8C2F5427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{57592CEE-FDEA-44BA-9DFA-056A8C2F5427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2ECB9F-92C5-4584-AEEA-CDF70D00BC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2ECB9F-92C5-4584-AEEA-CDF70D00BC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
